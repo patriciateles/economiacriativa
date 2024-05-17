@@ -53,6 +53,7 @@ main a{
 main p{
     margin: 0px 0px 10px 0px;
     line-height: 1.5em; /*espaçameto 1.5 pro texto não ficar grudado*/
+    text-align: left;
 }
 
 main h3 {
