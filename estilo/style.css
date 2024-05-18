@@ -22,6 +22,7 @@ header{
 }
 
 nav{
+    display: block;
   background-color: rgb(210, 226, 226);
     max-width: 800px;
     min-width: 300px;
@@ -31,6 +32,10 @@ nav{
   /*padding-top: 20px;
   padding-bottom: 20px;*/
   text-align: center;
+}
+
+nav ul{
+    text-align: center;
 }
 
 nav a{
