@@ -102,18 +102,18 @@ main a:hover{
 }
 
 footer{
+    margin: auto;
     background-color: rgb(210, 226, 226);
     font-size: 13px;
     text-align: center;
-    padding: 20px;
-    max-width: 800px;
-    min-width: 300px;
-    margin:auto;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
 }
 
 footer p {
-    line-height: 1.5em;
-    padding: 10px; 
+    padding: 5px; 
 }
 
 /*resolução smartfone*/
@@ -121,7 +121,6 @@ footer p {
    
     nav {
         padding: 0px;
-        border-radius: 0px;
         }
         
         nav a{
@@ -133,12 +132,9 @@ footer p {
             border-bottom: 2px solid rgb(209, 209, 209);
         }
 
-nav ul li {
-padding: 0px;
-}
+
     nav ul li a{
             display: block;
-            width: 100%;
             text-align: center;
             font-size: 15px;
             padding: 6px;
