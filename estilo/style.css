@@ -14,32 +14,47 @@ body{
 }
 
 header{
-    /*background-color: bisque;*/
     min-height: 80px;
     padding-top: 30px;
     padding-bottom: 20px;
     text-align: center;
 }
 
-nav{
-    display: block;
-  background-color: rgb(210, 226, 226);
-    max-width: 800px;
-    min-width: 300px;
-    padding: 20px;
-    border-radius: 10px;
-    margin: auto;
-  /*padding-top: 20px;
-  padding-bottom: 20px;*/
-  text-align: center;
+header a{
+text-decoration: none;
+color: black;
 }
 
-nav ul{
+header a:hover{
+    background-color: lemonchiffon;
+    border-radius: 5px;
+}
+
+nav{
+    margin: auto;
+    background-color: rgb(210, 226, 226);
+    max-width: 800px;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     text-align: center;
 }
 
-nav a{
-    padding: 10px;
+nav a{ /*colocar fora de nav ul li para fazer o hover*/
+    padding:10px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+nav a:hover{
+    background-color: lemonchiffon;
+    border-radius: 5px;
+}
+
+nav ul li {
+    display: inline; /*colocar na horizontal*/
+    text-align: center;
     font-size: 15px;
 }
 
@@ -52,15 +67,17 @@ main{
     max-width: 800px;
     min-width: 300px;
     padding: 20px;
-    border-radius: 10px;
     margin: auto;
     /*box-shadow: 0px 0px 10px #00000095;*/
 }
-main a{
-    text-align: left;
+
+main ul li{
+    list-style: circle;
+    padding: 3px;
 }
+
 main p{
-    margin: 0px 0px 10px 0px;
+    margin: 5px 0px 10px 0px; /*em cima, dir, em baixo, esq / sentido horário*/
     line-height: 1.5em; /*espaçameto 1.5 pro texto não ficar grudado*/
     text-align: left;
 }
@@ -77,22 +94,17 @@ main h4 {
     border-radius: 10px;
     text-align: center;
     padding: 10px;
-
 }
 
-a{
+main a{
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: black;
 }
-a:hover{
+main a:hover{
     background-color: lemonchiffon;
     border-radius: 5px;
 }
-ul{
-    list-style-position: inside;
-    text-align: left;
-    container-type: square;
-}
+
 footer{
     background-color: rgb(210, 226, 226);
     font-size: 13px;
@@ -100,10 +112,40 @@ footer{
     padding: 20px;
     max-width: 800px;
     min-width: 300px;
-    border-radius: 10px; /*deixar curvadinha a borda*/
     margin:auto;
 }
+
 footer p {
     line-height: 1.5em;
     padding: 10px; 
 }
+
+/*resolução smartfone*/
+@media (max-width:576px) {
+   
+nav {
+padding: 10px;
+padding-left: 0px;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 0px;
+}
+
+nav ul li {
+padding: 0px;
+}
+    nav ul li a{
+            display: block;
+            width: 100%;
+            text-align: left;
+            font-size: 15px;
+            padding: 3px;
+            padding-left: 30px;
+            color: black;
+          }
+
+}
+
+
